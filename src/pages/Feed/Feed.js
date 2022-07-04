@@ -139,7 +139,7 @@ class Feed extends Component {
         return res.json();
       })
       .then(resData => {
-        console.log(resData);
+        //console.log(resData);
       })
       .catch(this.catchError);
   };
@@ -192,7 +192,7 @@ class Feed extends Component {
         return res.json();
       })
       .then(resData => {
-        console.log(resData);
+        //console.log(resData);
         // eslint-disable-next-line
         const post = {
           _id: resData.post._id,
@@ -239,7 +239,7 @@ class Feed extends Component {
         return res.json();
       })
       .then(resData => {
-        console.log(resData);
+        //console.log(resData);
         this.loadPosts();
         // this.setState(prevState => {
         //   const updatedPosts = prevState.posts.filter(p => p._id !== postId);
