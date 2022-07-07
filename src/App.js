@@ -74,7 +74,7 @@ class App extends Component {
           throw new Error('Validation failed.');
         }
         if (res.status !== 200 && res.status !== 201) {
-          console.log('Error!');
+         // console.log('Error!');
           throw new Error('Could not authenticate you!');
         }
         return res.json();
@@ -97,7 +97,7 @@ class App extends Component {
         this.setAutoLogout(remainingMilliseconds);
       })
       .catch(err => {
-        console.log(err);
+        //console.log(err);
         this.setState({
           isAuth: false,
           authLoading: false,
@@ -127,7 +127,7 @@ class App extends Component {
           );
         }
         if (res.status !== 200 && res.status !== 201) {
-          console.log('Error!');
+          //console.log('Error!');
           throw new Error('Creating a user failed!');
         }
         return res.json();
@@ -138,7 +138,7 @@ class App extends Component {
         this.props.history.replace('/');
       })
       .catch(err => {
-        console.log(err);
+        //console.log(err);
         this.setState({
           isAuth: false,
           authLoading: false,

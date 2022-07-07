@@ -210,7 +210,7 @@ class Feed extends Component {
         });
       })
       .catch(err => {
-        console.log(err);
+        //console.log(err);
         this.setState({
           isEditing: false,
           editPost: null,
@@ -247,7 +247,7 @@ class Feed extends Component {
         // });
       })
       .catch(err => {
-        console.log(err);
+       // console.log(err);
         this.setState({ postsLoading: false });
       });
   };
